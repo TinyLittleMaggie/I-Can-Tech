@@ -7,13 +7,16 @@ local:
   root: <%= Rails.root.join("storage") %>
 
 
-qiniu:
-  service: Qiniu
-  access_key: "N0zsNOTQYcd6C56revlzgwPUxq9D3pJYojcSdLn8"
-  secret_key: "bSX3guNEa3JV2sWc-gxTbqYLmRkjOMXx9GjHH2GA"
-  domain: "q1xs0nzvt.bkt.clouddn.com"
-  bucket: "icantech"
-  protocol: "http"
+# qiniu:
+#   service: Qiniu
+#   access_key: "N0zsNOTQYcd6C56revlzgwPUxq9D3pJYojcSdLn8"
+#   secret_key: "bSX3guNEa3JV2sWc-gxTbqYLmRkjOMXx9GjHH2GA"
+#   domain: "q1xs0nzvt.bkt.clouddn.com"
+#   bucket: "icantech"
+#   protocol: "http"
+
+cloudinary:
+  service: Cloudinary
 
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:

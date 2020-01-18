@@ -4,7 +4,7 @@
     <% @scenarios.each do |scenario| %>
       <div class="col-sm-12 col-md-6">
         <%= link_to scenario_path(scenario.id) do %>
-          <div class="card scenario-card mb-3" style="background-image: url(<%= scenario.image_url %>)">
+          <div class="card scenario-card mb-3" style="background-image: url(<%= scenario.imgurl %>)">
             <h5><%= scenario.title %></h5>
           </div>
         <% end %>

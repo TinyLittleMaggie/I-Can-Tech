@@ -9,6 +9,7 @@ gem 'puma'
 gem 'rails', '5.2.3'
 gem 'redis'
 gem 'activestorage_qiniu'
+gem 'cloudinary', '~> 1.9.1'
 gem 'coffee-rails'
 
 gem 'autoprefixer-rails'
@@ -21,6 +22,7 @@ gem 'pundit'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'dotenv-rails'
 end
 
 group :development, :test do

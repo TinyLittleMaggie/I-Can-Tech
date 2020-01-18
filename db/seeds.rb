@@ -1,54 +1,56 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 Badge.all.destroy_all
 Record.all.destroy_all
 Step.all.destroy_all
 Scenario.all.destroy_all
 User.all.destroy_all
 
+# ------------------------------- Create users ------------------------------- #
+
 u1 = User.create!(email: "test@test.com", password: "123456",
                   user_name: "fang"
                   )
 puts 'users created'
+
+# ----------------------------- Create Scenarios ----------------------------- #
+
 s1 = Scenario.create!(
   title: '学会打车',
   description: '【滴滴出行App】您可以通过手机随时随地呼叫或预约出租车，快车，专车等。
-  关键步骤包括：输入上车地点和目的地、选择网约车类型以及呼叫。司机接单后，您可以打电话联系司机师傅，明确上车地点。'
+  关键步骤包括：输入上车地点和目的地、选择网约车类型以及呼叫。司机接单后，您可以打电话联系司机师傅，明确上车地点。',
+  imgurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579355257/i-can-tech/scenarios-taxi_3x_qut63w.png'
 )
-s1.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/taxi@3x.png"), filename: SecureRandom.hex(20))
 puts 'scenario 1 done'
+
 s2 = Scenario.create!(
   title: '查询公交',
   description: '【高德地图App】您可以通过地图软件查找最快捷的出行路线。
-  关键步骤包括：输入“我的位置”以及目的地、选择出行方式。'
+  关键步骤包括：输入“我的位置”以及目的地、选择出行方式。',
+  imgurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579355257/i-can-tech/scenarios-bus_3x_o64nbg.png'
 )
-s2.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/bus@3x.png"), filename: SecureRandom.hex(20))
 puts 'scenario 2 done'
+
 s3 = Scenario.create!(
   title: '视频通话',
   description: '【微信App】您可以通过微信群，随时随地与家人进行语音或视频通话。
-  关键步骤包括：打开微信群语音或视频通话、选择通话对象。'
+  关键步骤包括：打开微信群语音或视频通话、选择通话对象。',
+  imgurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579355256/i-can-tech/scenarios-call_3x_iskqxa.png'
 )
-s3.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/call@3x.png"), filename: SecureRandom.hex(20))
-
 puts 'scenario 3 done'
 
 s4 = Scenario.create!(
   title: '网上购物',
-  description: '内容准备中......'
+  description: '内容准备中......',
+  imgurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579355260/i-can-tech/scenarios-grocery_3x_x2fqli.png'
 )
-s4.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/grocery@3x.png"), filename: SecureRandom.hex(20))
+puts 'scenario 4 done'
 
 s5 = Scenario.create!(
   title: '收养宠物',
-  description: '内容准备中......'
+  description: '内容准备中......',
+  imgurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579355256/i-can-tech/scenarios-cat_3x_e3ri0h.png'
 )
-s5.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/cat@3x.png"), filename: SecureRandom.hex(20))
+puts 'scenario 5 done'
+
 
 # groupchat demo seeds
 step1 = Step.create!(
