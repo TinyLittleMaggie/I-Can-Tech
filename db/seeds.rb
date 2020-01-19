@@ -51,6 +51,16 @@ s5 = Scenario.create!(
 )
 puts 'scenario 5 done'
 
+# didi demo seeds
+step21 = Step.create!(
+  category: 1,
+  priority: 1,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/video/upload/v1579403499/i-can-tech/Didi-demo-compressed_nrfwmc.mp4'
+)
+puts 'step 21 done'
+
+# ------------------------------- Create Steps ------------------------------- #
 
 # groupchat demo seeds
 step1 = Step.create!(
@@ -228,14 +238,7 @@ step20 = Step.create!(
 step20.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/map-quiz%203.png"), filename: SecureRandom.hex(20))
 puts 'step 20 done'
 
-# didi demo seeds
-step21 = Step.create!(
-  category: 1,
-  priority: 1,
-  scenario: s1
-)
-step21.video.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/didi.mp4"), filename: SecureRandom.hex(20))
-puts 'step 21 done'
+# --------------------------------- insert didi demo here when testing done
 
 # didi walkthrough seeds
 step22 = Step.create!(

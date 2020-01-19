@@ -1,6 +1,6 @@
 <% step = @steps.first %>
 
-<%= video_tag url_for(step.video), controls: true, class: "video-demo" %>
+<%= video_tag(step.mediaurl, controls: true, class: "video-demo") %>
 <div class="overlay invisible container d-flex justify-content-center align-items-center">
   <%=simple_form_for(@record, method: :patch, url: step_record_path(params[:id])) do |f| %>
     <%= f.submit "分步引导", class: "button-green invisible" %>
