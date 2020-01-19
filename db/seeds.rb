@@ -71,7 +71,7 @@ step22 = Step.create!(
   category: 2,
   priority: 1,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402620/i-can-tech/Didi-walkthrough-1_dmee4s.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417728/i-can-tech/Didi-walkthrough-1_nycmmq.png'
 )
 puts 'Created Didi walkthrough step 1'
 
@@ -79,7 +79,7 @@ step23 = Step.create!(
   category: 2,
   priority: 2,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402620/i-can-tech/Didi-walkthrough-2_aacdmw.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417729/i-can-tech/Didi-walkthrough-2_d0gvgh.png'
 )
 puts 'Created Didi walkthrough step 2'
 
@@ -87,7 +87,7 @@ step24 = Step.create!(
   category: 2,
   priority: 3,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402622/i-can-tech/Didi-walkthrough-3_xu5mjm.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417728/i-can-tech/Didi-walkthrough-3_wtjbys.png'
 )
 puts 'Created Didi walkthrough step 3'
 
@@ -95,7 +95,7 @@ step25 = Step.create!(
   category: 2,
   priority: 4,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402621/i-can-tech/Didi-walkthrough-4_w1ef2u.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417728/i-can-tech/Didi-walkthrough-4_b2ig9c.png'
 )
 puts 'Created Didi walkthrough step 4'
 
@@ -103,7 +103,7 @@ step26 = Step.create!(
   category: 2,
   priority: 5,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402622/i-can-tech/Didi-walkthrough-5_abrrnz.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417729/i-can-tech/Didi-walkthrough-5_iupsiu.png'
 )
 puts 'Created Didi walkthrough step 5'
 
@@ -111,7 +111,7 @@ step27 = Step.create!(
   category: 2,
   priority: 6,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402622/i-can-tech/Didi-walkthrough-6_lmmtpo.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417729/i-can-tech/Didi-walkthrough-6_dvidhi.png'
 )
 puts 'Created Didi walkthrough step 6'
 
@@ -119,7 +119,7 @@ step28 = Step.create!(
   category: 2,
   priority: 7,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402622/i-can-tech/Didi-walkthrough-7_tobof7.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417729/i-can-tech/Didi-walkthrough-7_amf8xq.png'
 )
 puts 'Created Didi walkthrough step 7'
 
@@ -131,7 +131,7 @@ step29 = Step.create!(
   question: "点击哪里可修改上车地点？",
   right_answer: 2,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402621/i-can-tech/Didi-quiz-1_ywionu.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417727/i-can-tech/Didi-quiz-1_ue09ud.png'
 )
 puts 'Created Didi quiz 1'
 
@@ -141,7 +141,7 @@ step30 = Step.create!(
   question: "点击哪里可以联系司机师傅？",
   right_answer: 3,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402620/i-can-tech/Didi-quiz-2_vj1tkr.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417728/i-can-tech/Didi-quiz-2_trkpqz.png'
 )
 puts 'Created Didi quiz 2'
 
@@ -151,7 +151,7 @@ step31 = Step.create!(
   question: "假设你明天要去机场，点击哪里可预约用车？",
   right_answer: 2,
   scenario: s1,
-  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402621/i-can-tech/Didi-quiz-3_uot3ia.png'
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579417728/i-can-tech/Didi-quiz-3_x4iakn.png'
 )
 puts 'Created Didi quiz 3'
 
