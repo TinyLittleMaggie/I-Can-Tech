@@ -42,7 +42,7 @@
 
 <!-- Image -->
 <div class="container my-3 text-center">
-  <%= image_tag url_for(@steps.find_by_priority(@step.priority).image), style: "height: 100vh;"%>
+  <%= image_tag(@steps.find_by_priority(@step.priority).mediaurl, style: "height: 100vh;") %>
 </div>
 
 <%= javascript_pack_tag 'quiz' %>
