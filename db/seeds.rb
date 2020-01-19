@@ -53,7 +53,7 @@ puts 'scenario 5 done'
 
 # ------------------------------- Create Steps ------------------------------- #
 
-# ------- Didi -------- #
+# ------------ Didi ------------- #
 
 # Demo
 
@@ -156,93 +156,97 @@ step31 = Step.create!(
 puts 'Created Didi quiz 3'
 
 
-# ----- Groupcall ----- #
+# ---------- Groupcall ---------- #
+
+# Demo
 
 step1 = Step.create!(
   category: 1,
   priority: 1,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/video/upload/v1579419100/i-can-tech/Groupcall-demo_loy6f3.mp4'
 )
-step1.video.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/wechat-groupcall.mp4"), filename: SecureRandom.hex(20))
-puts 'step 1 done'
+puts 'Created groupcall demo'
 
-# groupchat walkthrough seeds
+# Walkthrough
+
 step2 = Step.create!(
   category: 2,
   priority: 1,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579419099/i-can-tech/Groupcall-walkthrough-1_bankkz.png'
 )
-step2.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Groupcall-1.png"), filename: SecureRandom.hex(20))
-puts 'step 2 done'
+puts 'Created groupcall walkthrough step 1'
 
 step3 = Step.create!(
   category: 2,
   priority: 2,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579419098/i-can-tech/Groupcall-walkthrough-2_zhkdtm.png'
 )
-step3.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Groupcall-2.png"), filename: SecureRandom.hex(20))
-puts 'step 3 done'
+puts 'Created groupcall walkthrough step 2'
 
 step4 = Step.create!(
   category: 2,
   priority: 3,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579419098/i-can-tech/Groupcall-walkthrough-3_hqy075.png'
 )
-step4.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Groupcall-3.png"), filename: SecureRandom.hex(20))
-puts 'step 4 done'
+puts 'Created groupcall walkthrough step 3'
 
 step5 = Step.create!(
   category: 2,
   priority: 4,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579419099/i-can-tech/Groupcall-walkthrough-4_dlbsba.png'
 )
-step5.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Groupcall-4.png"), filename: SecureRandom.hex(20))
-puts 'step 5 done'
+puts 'Created groupcall walkthrough step 4'
 
 step6 = Step.create!(
   category: 2,
   priority: 5,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579419099/i-can-tech/Groupcall-walkthrough-5_w9sftz.png'
 )
-step6.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Groupcall-5.png"), filename: SecureRandom.hex(20))
-puts 'step 6 done'
+puts 'Created groupcall walkthrough step 5'
 
 step7 = Step.create!(
   category: 2,
   priority: 6,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579419099/i-can-tech/Groupcall-walkthrough-6_dgoaen.png'
 )
-step7.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Groupcall-6.png"), filename: SecureRandom.hex(20))
-puts 'step 7 done'
+puts 'Created groupcall walkthrough step 6'
 
 step8 = Step.create!(
   category: 2,
   priority: 7,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579419100/i-can-tech/Groupcall-walkthrough-7_ycxuzf.png'
 )
-step8.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Groupcall-7.png"), filename: SecureRandom.hex(20))
-puts 'step 8 done'
+puts 'Created groupcall walkthrough step 7'
 
-# groupchat practice seeds
+# Quiz
+
 step9 = Step.create!(
   category: 3,
   priority: 1,
   question: "从哪里可以找到语音通话的选项？",
   right_answer: 2,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579419098/i-can-tech/Groupcall-quiz-1_zocprl.png'
 )
-step9.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/groupcall-quiz%201.png"), filename: SecureRandom.hex(20))
-puts 'step 9 done'
+puts 'Created groupcall quiz 1'
 
 step10 = Step.create!(
   category: 3,
   priority: 2,
   question: "语音通话开始后，如何切换到视频聊天？",
   right_answer: 3,
-  scenario: s3
+  scenario: s3,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579419099/i-can-tech/Groupcall-quiz-2_al5ktr.png'
 )
-step10.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/groupcall-quiz%202.png"), filename: SecureRandom.hex(20))
-puts 'step 10 done'
+puts 'Created groupcall quiz 2'
 
 # map demo seeds
 step11 = Step.create!(
