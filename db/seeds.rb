@@ -51,8 +51,113 @@ s5 = Scenario.create!(
 )
 puts 'scenario 5 done'
 
+# ------------------------------- Create Steps ------------------------------- #
 
-# groupchat demo seeds
+# ------- Didi -------- #
+
+# Demo
+
+step21 = Step.create!(
+  category: 1,
+  priority: 1,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/video/upload/v1579403499/i-can-tech/Didi-demo-compressed_nrfwmc.mp4'
+)
+puts 'Created Didi demo'
+
+# Walkthrough
+
+step22 = Step.create!(
+  category: 2,
+  priority: 1,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402620/i-can-tech/Didi-walkthrough-1_dmee4s.png'
+)
+puts 'Created Didi walkthrough step 1'
+
+step23 = Step.create!(
+  category: 2,
+  priority: 2,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402620/i-can-tech/Didi-walkthrough-2_aacdmw.png'
+)
+puts 'Created Didi walkthrough step 2'
+
+step24 = Step.create!(
+  category: 2,
+  priority: 3,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402622/i-can-tech/Didi-walkthrough-3_xu5mjm.png'
+)
+puts 'Created Didi walkthrough step 3'
+
+step25 = Step.create!(
+  category: 2,
+  priority: 4,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402621/i-can-tech/Didi-walkthrough-4_w1ef2u.png'
+)
+puts 'Created Didi walkthrough step 4'
+
+step26 = Step.create!(
+  category: 2,
+  priority: 5,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402622/i-can-tech/Didi-walkthrough-5_abrrnz.png'
+)
+puts 'Created Didi walkthrough step 5'
+
+step27 = Step.create!(
+  category: 2,
+  priority: 6,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402622/i-can-tech/Didi-walkthrough-6_lmmtpo.png'
+)
+puts 'Created Didi walkthrough step 6'
+
+step28 = Step.create!(
+  category: 2,
+  priority: 7,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402622/i-can-tech/Didi-walkthrough-7_tobof7.png'
+)
+puts 'Created Didi walkthrough step 7'
+
+# Quiz
+
+step29 = Step.create!(
+  category: 3,
+  priority: 1,
+  question: "点击哪里可修改上车地点？",
+  right_answer: 2,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402621/i-can-tech/Didi-quiz-1_ywionu.png'
+)
+puts 'Created Didi quiz 1'
+
+step30 = Step.create!(
+  category: 3,
+  priority: 2,
+  question: "点击哪里可以联系司机师傅？",
+  right_answer: 3,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402620/i-can-tech/Didi-quiz-2_vj1tkr.png'
+)
+puts 'Created Didi quiz 2'
+
+step31 = Step.create!(
+  category: 3,
+  priority: 3,
+  question: "假设你明天要去机场，点击哪里可预约用车？",
+  right_answer: 2,
+  scenario: s1,
+  mediaurl: 'https://res.cloudinary.com/tinylittlemaggie/image/upload/v1579402621/i-can-tech/Didi-quiz-3_uot3ia.png'
+)
+puts 'Created Didi quiz 3'
+
+
+# ----- Groupcall ----- #
+
 step1 = Step.create!(
   category: 1,
   priority: 1,
@@ -228,102 +333,7 @@ step20 = Step.create!(
 step20.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/map-quiz%203.png"), filename: SecureRandom.hex(20))
 puts 'step 20 done'
 
-# didi demo seeds
-step21 = Step.create!(
-  category: 1,
-  priority: 1,
-  scenario: s1
-)
-step21.video.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/didi.mp4"), filename: SecureRandom.hex(20))
-puts 'step 21 done'
 
-# didi walkthrough seeds
-step22 = Step.create!(
-  category: 2,
-  priority: 1,
-  scenario: s1
-)
-step22.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Didi-1.png"), filename: SecureRandom.hex(20))
-puts 'step 22 done'
-
-step23 = Step.create!(
-  category: 2,
-  priority: 2,
-  scenario: s1
-)
-step23.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Didi-2.png"), filename: SecureRandom.hex(20))
-puts 'step 23 done'
-
-step24 = Step.create!(
-  category: 2,
-  priority: 3,
-  scenario: s1
-)
-step24.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Didi-3.png"), filename: SecureRandom.hex(20))
-puts 'step 24 done'
-
-step25 = Step.create!(
-  category: 2,
-  priority: 4,
-  scenario: s1
-)
-step25.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Didi-4.png"), filename: SecureRandom.hex(20))
-puts 'step 25 done'
-
-step26 = Step.create!(
-  category: 2,
-  priority: 5,
-  scenario: s1
-)
-step26.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Didi-5.png"), filename: SecureRandom.hex(20))
-puts 'step 26 done'
-
-step27 = Step.create!(
-  category: 2,
-  priority: 6,
-  scenario: s1
-)
-step27.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Didi-6.png"), filename: SecureRandom.hex(20))
-puts 'step 27 done'
-
-step28 = Step.create!(
-  category: 2,
-  priority: 7,
-  scenario: s1
-)
-step28.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/Didi-7.png"), filename: SecureRandom.hex(20))
-puts 'step 28 done'
-
-# Didi Ride  practice seeds
-step29 = Step.create!(
-  category: 3,
-  priority: 1,
-  question: "点击哪里可修改上车地点？",
-  right_answer: 2,
-  scenario: s1
-)
-step29.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/didi-quiz%201.png"), filename: SecureRandom.hex(20))
-puts 'step 29 done'
-
-step30 = Step.create!(
-  category: 3,
-  priority: 2,
-  question: "点击哪里可以联系司机师傅？",
-  right_answer: 3,
-  scenario: s1
-)
-step30.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/didi-quiz%202.png"), filename: SecureRandom.hex(20))
-puts 'step 30 done'
-
-step31 = Step.create!(
-  category: 3,
-  priority: 3,
-  question: "假设你明天要去机场，点击哪里可预约用车？",
-  right_answer: 2,
-  scenario: s1
-)
-step31.image.attach(io: open("http://q1xs0nzvt.bkt.clouddn.com/didi-quiz%203.png"), filename: SecureRandom.hex(20))
-puts 'step 31 done'
 
 puts "Created #{User.count} User"
 puts "Created #{Scenario.count} scenarios"
